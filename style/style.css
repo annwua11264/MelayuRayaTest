@@ -1,0 +1,126 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* ป้องกันการเลื่อนในขณะใช้งาน */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.8); /* โปร่งแสงเพื่อให้เห็นพื้นหลัง */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* ปรับความเข้มของเงา */
+  width: 100%;
+  max-width: 600px; /* กำหนดขนาดสูงสุดของ container */
+  text-align: left; /* เพื่อให้อ่านง่ายขึ้นในบางกรณี */
+}
+
+h1 {
+  font-size: 2.2rem; /* ปรับขนาดของข้อความให้ใหญ่ขึ้น */
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #f8f9fa; /* ใช้สีขาวอมเทาเพื่อให้ตัดกับพื้นหลัง */
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8f9fa;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 1.1rem; /* ขนาดตัวอักษรที่อ่านง่าย */
+  color: #f8f9fa; /* ทำให้สีของ label สว่างขึ้น */
+}
+
+.form-control {
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc; /* เพิ่มกรอบให้ input ชัดเจน */
+  background-color: rgba(255, 255, 255, 0.8); /* พื้นหลัง input เป็นสีขาวโปร่งใส */
+  color: #333; /* ใช้สีเข้มสำหรับตัวอักษร */
+}
+
+.form-control:focus {
+  border-color: #007bff; /* ปรับสีเมื่อกำลังใช้งาน */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* เพิ่มเงาให้กับ input เมื่อ focus */
+}
+
+.btn {
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* เพิ่ม effect เมื่อ hover */
+}
+
+.btn:hover {
+  transform: scale(1.05); /* เมื่อ hover ขนาดปุ่มจะใหญ่ขึ้นเล็กน้อย */
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.icon {
+  font-size: 100px;
+  margin-top: 30px;
+}
+
+.advice-text {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #f8f9fa;
+  font-weight: 400;
+}
+
+/* เพิ่ม responsiveness สำหรับขนาดหน้าจอเล็ก */
+@media (max-width: 767px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .icon {
+    font-size: 80px;
+  }
+}

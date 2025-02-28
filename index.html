@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th"> <!-- เปลี่ยนภาษาเป็นภาษาไทย -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลการประเมิน</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ลงทะเบียนเข้างาน</h1>
+    <h2>Melayu Raya 2025</h2>
+    
+    <!-- ปรับให้ปุ่มมีข้อความที่ชัดเจนยิ่งขึ้น -->
+    <button class="btn btn-warning" onclick="window.location.href='Page1.html'">ลงทะเบียนเข้าร่วมงาน</button>
+    
+    <div class="mb-3"></div>
+
+    <!-- ใช้ label ที่มีความหมายชัดเจน -->
+    <div class="mb-3">
+        <label for="participants" class="form-label">จำนวนผู้เข้างาน</label>
+    </div>
+    
+    <div class="d-flex gap-5 align-items-center justify-content-center">
+        <div>
+            <label class="form-label" for="maleCount">ชาย:</label>
+            <label id="maleCount">20</label>
+        </div>
+        <div>
+            <label class="form-label" for="femaleCount">หญิง:</label>
+            <label id="femaleCount">10</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+      <!-- เพิ่มการเข้าใช้งานที่หลากหลายขึ้น เช่น Facebook และ YouTube -->
+      <button class="btn btn-primary" onclick="window.location.href='https://facebook.com'">
+        <i class="bi bi-facebook"></i> Facebook
+      </button>
+      <button class="btn btn-danger" onclick="window.location.href='https://youtube.com'">
+        <i class="bi bi-youtube"></i> YouTube
+      </button>
+    </div>
+
+  </div>
+  
+  <!-- ใส่ bootstrap JS เพื่อลดปัญหาเวลาใช้บางฟังก์ชัน -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
